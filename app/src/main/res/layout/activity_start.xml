@@ -6,4 +6,107 @@
     android:layout_height="match_parent"
     tools:context=".StartActivity">
 
+    <TextView
+        android:id="@+id/textView_header"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:text="@string/xo_games"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        app:autoSizeTextType="uniform"
+        app:autoSizeMinTextSize="18sp"
+        app:autoSizeMaxTextSize="30sp"
+        app:autoSizeStepGranularity="2sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/guideline_horizontal_10"
+        app:layout_constraintBottom_toBottomOf="@id/guideline_horizontal_15"
+        />
+    
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_start"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/btn_start"
+        app:layout_constraintStart_toStartOf="@id/guideline_vertical_30"
+        app:layout_constraintEnd_toEndOf="@id/guideline_vertical_70"
+        app:layout_constraintTop_toTopOf="@id/guideline_horizontal_40"
+        app:layout_constraintBottom_toBottomOf="@id/guideline_horizontal_60"
+        />
+
+    <TextView
+        android:id="@+id/textView_start"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:text="@string/play_game"
+        android:textColor="@color/white"
+        android:padding="3dp"
+        app:autoSizeTextType="uniform"
+        app:autoSizeMinTextSize="18sp"
+        app:autoSizeMaxTextSize="30sp"
+        app:autoSizeStepGranularity="2sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/guideline_horizontal_60"
+        app:layout_constraintBottom_toBottomOf="@id/guideline_horizontal_65"
+        />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_vertical_30"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.30"
+        />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_vertical_70"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.70"
+        />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_horizontal_10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.10"
+        />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_horizontal_15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.15"
+        />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_horizontal_40"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.40"
+        />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_horizontal_60"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.60"
+        />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_horizontal_65"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.65"
+        />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
