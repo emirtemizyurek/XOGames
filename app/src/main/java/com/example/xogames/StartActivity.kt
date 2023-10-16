@@ -13,7 +13,7 @@ class StartActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         binding.buttonStart.setOnClickListener {
-            Intent(this@StartActivity, MainActivity::class.java)
+            startActivity(Intent(this@StartActivity, MainActivity::class.java))
             finish()
         }
     }
